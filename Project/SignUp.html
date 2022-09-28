@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up page</title>
+</head>
+<style>
+
+/* ************************************ALL CSS CODE ARE HERE******************************************* */
+
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url('https://lh3.googleusercontent.com/xrxk--O3AEXklUOt-afGX_mvUhlNxOyZfrLSGFDewfAtZMrBTFtc-k5MXsvuD99X2q9kk6tUps3pR0gG4DBexL4VTW81x8bs1uxzOlh4PCUP4Agdc9AK_TiFyFk8nYMOLXs23AnHUr4=w2400');
+    } 
+   #container{
+    border:0px solid red;
+    width: 80%;
+    height:auto;
+    margin: auto;
+    margin-bottom: 40px;
+   }
+
+
+   form>p{
+    color: grey;
+   }
+
+   label{
+    display:block;
+   }
+
+   #submit{
+    border:0px solid blue;
+    width: 100%;
+   }
+
+   #aboveC{
+
+    border: 1px solid white;
+    width: 45%;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+   form>input{
+
+    width: 98.7%;
+    height: 40px;
+    border:2px solid blue;
+   }
+
+   #submit>input{
+    height: 40px;
+    width: 200px;
+    background-color: blue;
+    color: beige;
+    border: none;
+
+   }
+
+   #submit{
+    display: flex;
+    justify-content: right;
+   }
+
+</style>
+<body>
+    <div id ="aboveC">
+    <div id="container">
+    <form>
+     <h1>Sign up or Sign in</h1>
+     <p>Enjoy the convenience of a single account across all participating brands</p>
+     <label for="Mobile Number"><b>Mobile Number</b></label>
+    <input id="Mob" type="number" placeholder="Enter your mobile number" required>
+    <label for="email"><b>Email</b></label>
+    <input id="email"  type="text" placeholder="Enter Email" required>
+    <label for="psw"><b>Password</b></label>
+    <input id="pwd" type="password" placeholder="Enter Password" required>
+    <p>By creating an account you agree to our <a style="color:dodgerblue">Terms & Privacy</a>.</p>
+    <div id="submit">
+        
+        <input type="submit" value="CONTINUE">
+    </div>
+</div>
+    
+    </form>
+    </div>
+</body>
+
+<script>
+
+    // *******************************ALL JS CODE ARE HERE****************************** 
+
+let form = document.querySelector("form")
+form.addEventListener("submit", addDetails);
+
+let DelailsArr = JSON.parse(localStorage.getItem("Signup_Details")) || [];
+
+function addDetails(event){
+    event.preventDefault();
+
+    let obj = {
+        Mob : form.Mob.value,
+        email : form.email.value,
+        pwd : form.pwd.value
+
+    }
+
+    DelailsArr.push(obj);
+    
+    localStorage.setItem("Signup_Details", JSON.stringify(DelailsArr));
+
+    window.location.href="file:///C:/Users/risha/Desktop/Project-WEB-101/Login.html"; 
+    
+
+}
+
+</script>
+</html>
