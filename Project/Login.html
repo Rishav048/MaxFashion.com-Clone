@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Log in Page</title>
+</head>
+ <style>
+
+    body{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url('https://lh3.googleusercontent.com/WdxFHcsjS_PgI6VSXwd5yrBxDuUJh_ep1OnT5aOgKh_xq44o7geN4-NS1cYy5iAGKnBgPvjziuRxwu3xG2SkTfqvuCjLGTJkzoR3AF95a-O6S_K7-E5HhN3kIYkSgQxAJ4__KCRkb4E=w2400'); 
+        
+    }
+   #container{
+    border:0px solid red;
+    width: 80%;
+    height:auto;
+    margin: auto;
+    margin-bottom: 40px;
+   }
+
+
+   form>p{
+    color: grey;
+   }
+
+   label{
+    display:block;
+   }
+
+   #submit{
+    border:0px solid blue;
+    width: 100%;
+   }
+
+   #aboveC{
+
+    border: 1px solid white;
+    width: 40%;
+    height: auto;
+    margin: auto;
+    margin-top: 120px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+   form>input{
+
+    width: 98.7%;
+    height: 40px;
+    border:2px solid blue;
+   }
+
+   #submit>input{
+    height: 40px;
+    width: 200px;
+    background-color: blue;
+    color: beige;
+    border: none;
+
+   }
+
+   #submit{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    border:0px solid red
+   }
+
+</style> 
+<body>
+    <div id ="aboveC">
+    <div id="container">
+    <form>
+     <h1>Log in</h1>
+     <p>Enjoy the convenience of a single account across all participating brands</p>
+     <label for="Mobile Number"><b>Mobile Number</b></label>
+    <input  id ="mobileN" type="number" placeholder="Enter your resistered mobile number" name="email" required>
+    <label for="email"><b>Email</b></label>
+    <input  id ="emailadd"  type="text" placeholder="Enter your resistered email" name="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input  id ="passwd"  type="password" placeholder="Enter Password" name="psw" required>
+    <div id="submit">
+        <input type="submit" value="LOGIN">
+    </div>
+</div>
+    
+    </form>
+    </div>
+</body>
+
+<script>
+//********************************** ALL JS CODE ARE HERE *************************************
+
+let LSdata = JSON.parse(localStorage.getItem("Signup_Details")) || [];
+//console.log(LSdata)
+
+let form = document.querySelector("form");
+form.addEventListener("submit", matchDetails);
+
+
+function matchDetails(event){
+    event.preventDefault();
+
+    let Mobile = form.mobileN.value;
+    let Email = form.emailadd.value;
+    let Pass = form.passwd.value;
+    
+    let flag = false;
+    LSdata.forEach(function(el){
+   
+ if(Mobile === el.Mob && Email === el.email &&  Pass === el.pwd){
+
+    flag = true;
+
+ }
+ 
+ })
+
+ if(flag == true){
+
+alert("Login Successful-Go to Home page")
+window.location.href="file:///C:/Users/risha/Desktop/Project-WEB-101/Home_page.html";
+
+}
+else{
+    alert("Wrong Credentials, Please Try Again")
+    
+    window.location.reload();
+}
+
+ 
+}
+
+//alert("Login Successful-Go to Home page")
+   // window.location.href="file:///C:/Users/risha/Desktop/Project-WEB-101/Home_page.html";
+
+
+
+</script>
+
+
+</html>
