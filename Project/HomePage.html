@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<style>
+
+    /* *******************************************  STYLE FOR Top section of NAVBAR  ************************************* */
+    #top{
+        width: 100%;
+        height: auto;
+        border:0px solid red;
+        display:flex;
+        justify-content: space-between;
+        background-color: black;
+        cursor: pointer;
+        padding-left: 50px;
+
+    }
+
+    #div2{
+        border: 0px solid rgb(252, 47, 74);
+        width: 25%;
+        height: auto; 
+        display: flex;
+        
+        
+        
+    }
+
+    #div1{
+        border: 0px solid blue;
+        width: 25%;
+        height: auto;
+        display: flex;
+        margin-left: 50px;
+
+        
+
+
+        
+    }
+    #div1>div{
+        width:20%;
+        height: auto;
+        border:0px solid green;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+
+        
+    }
+
+
+    #div2>div{
+        width:25%;
+        height: auto;
+        border:0px solid rgb(151, 30, 30);
+        font-size: 13px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        border-right-color:  rgb(192, 188, 188);
+                
+    }
+    #top p{
+        color: rgb(243, 232, 232);
+        font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    #top i{
+        color: rgb(243, 232, 232);
+    }
+
+    /* *******************************************  STYLE FOR NAVBAR  ************************************* */
+    #navbar{
+        border:0px solid red;
+        width: 100%;
+        height: 70px;
+        display:flex;
+        justify-content: space-between;
+        background-color: rgb(247, 248, 247);
+    
+    }
+
+    #navbar>div:nth-child(1){
+        border:0px solid rgb(238, 209, 48);
+        width: 28%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+       
+    }
+    #navbar>div:nth-child(2){
+        border:0px solid rgb(238, 209, 48);
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 300px;
+        font-size: 30px;
+    }
+
+    #navbar>div:nth-child(2)>i{
+        height: 61%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+        font-size:18px ;
+        background-color: rgb(236, 237, 235);
+        
+        
+    }
+    #navbar>div:nth-child(2)>input{
+        height: 60%;
+        width: 85%;
+        font-size: 18px;
+        background-color: rgb(236, 237, 235);
+        border: none;
+    }
+    #navbar>div:nth-child(3){
+        border:0px solid rgb(238, 209, 48);
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+    #LOGOmax{
+        width:140px;
+        height: 100%;
+    }
+    #navbar>div>div{
+        border: 0px solid brown;
+        font-weight: bold;
+        font-size: 18px;
+        height: 100%;
+        width: 24%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar>div>div:hover{
+     background-color: white;
+     color: blue;
+    }
+    /* *******************************************  End STYLE FOR NAVBAR  ************************************* */
+    #blue{
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      border:0px solid violet;
+      background-color: rgb(48, 58, 178);
+      color: rgb(255, 255, 255);
+      font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 9px;
+      font-weight: 150;
+      padding-top: 5px;
+      
+    }
+    /* ************************* Start Style of Body **************************/
+
+    #Container{
+            margin: auto;
+            margin-top: 50px;
+            width:90%;
+            height: 500px;
+            border: 0px solid red;
+            
+        }
+        #Container>img{
+            width: 100%;
+            height:100%;
+        }
+        #WholeCont{
+            border:1px solid green;
+            width: 100%;;
+            height: auto;
+        }
+        #WholeCont>div:nth-child(2){
+            border:0px solid rgb(66, 113, 175);
+            width: 90%;;
+            height: 120px;
+            margin: auto;
+            margin-top: 100px;
+           display:grid;
+           grid-template-columns: repeat(3,1fr);
+           background-color: rgb(236, 237, 235);
+           border-radius: 15px;
+           margin-bottom: 80px;
+           
+          
+
+        }
+        #WholeCont>div:nth-child(2)>div{
+           height: 100%;
+           border:0px solid black;
+           font-size: 40px;
+           text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: rgb(48, 66, 178);
+           font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";;
+        
+        }
+        #WholeCont>div:nth-child(2)>div>img{
+            width: 60px;
+            height: 50px;
+        }
+        #btn{
+            width: 160px;
+            height: 40px;
+            font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-size: 16px;
+            background-color:rgb(202, 206, 214);
+            border: none;
+            border-radius: 10px;
+        }
+
+        #img1{
+            display: block;
+            margin: auto;
+            width:90%;
+            margin-top: 100px;
+
+        }
+    
+        #SbyCategory{
+            width: 90%;
+            height: auto;
+            border:0px solid blue;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap:20px;
+            margin-bottom: 100px;
+        }
+        #SbyCategory>div{
+            border:0px solid green;
+            text-align: center;
+            color: rgb(49, 47, 47);
+        
+        }
+        .Heading {
+            margin-left: 5%;
+            font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 100;
+            margin-top: 100px;
+            margin-bottom: 30px;
+           
+        }
+
+        #New_In{
+         margin:auto;
+         width: 90%;
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         gap:20px;
+         margin-bottom: 100px;
+        
+        }
+    
+        #New_In>div>img{
+            width:100%;
+        }
+        #Festive{
+            width:90%;
+            height: auto;
+            border:0px solid red;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            text-align: center;
+            
+        }
+        
+        #Budget{
+            width:90%;
+            height: auto;
+            border:0px solid red;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+            margin-bottom: 70px;
+        }
+        #Budget>img{
+            width: 100%;
+            width:100%;
+        }
+
+        .img2{
+         display: block;
+         margin: auto;
+         width: 90%;
+         margin-bottom: 50px;
+        }
+
+        /* ****************************** END OF BODY STYLE **************************/
+
+        /*********************************** START OF FOOTER STYLE **********************/
+        #Subscribe{
+        width: 100%;
+        height: 300px;
+        border:0px solid blue;
+        display: flex;
+        justify-content:space-around;
+
+    }
+    #Subscribe>div{
+        width: 40%;
+        height:100%;
+        border: 0px solid rgb(32, 218, 103);
+    }
+    #div1{
+        border:0px solid red;
+        width: 90%;
+        margin-left: 0px;
+    }
+
+     #Subscribe input{
+     height: 62px;
+     width: 70%;
+     font-size: 30px;
+     background-color: rgb(236, 237, 235);
+     border:none
+   }
+   #Subscribe button{
+    height: 65PX;
+     width: 28%;
+     font-size: 30px;background-color: black;
+     color: beige;
+     border-radius: 5px;
+   }
+   #div2{
+    border: 0px solid greenyellow;
+    width: 100%;;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+   }
+   #div2>img{
+    height: 80px;
+    width: 40%;
+   }
+   #Subscribe h2{
+    color:rgb(146, 147, 145);
+   }
+
+   /* *************** style of middle section *************** */
+   #middle{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border:0px solid blue;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+   }
+
+   #middle>div>h2{
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 18px;
+   }
+
+   #middle>div>p{
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    color: #5d5e5c;
+    line-height: 20px;
+}
+
+ #middle>div{
+    border: 0px solid green;
+ }  
+
+ #Slast{
+    width: 90%;
+    margin: auto;
+    height: 120px;
+    border:0px solid blue;
+    display: flex;
+    justify-content: space-between;
+    ;
+ }
+ #Slast>div:nth-child(1){
+    width: 65%;
+    height: 100%;
+    border:0px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+ }
+
+ #Slast>div:nth-child(1)>div{
+   border: 0px solid black;;
+   display: flex;
+   align-items: center;
+ }
+
+
+ #Slast>div:nth-child(2){
+    width: 15%;
+    height: 100%;
+    border:0px solid red;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ #icon{
+    border: 1px solid rgb(146, 147, 145);
+    width: 25%;
+    font-size: 30px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right:5px;
+    border-radius: 50%;
+
+ }
+ #icon+div>h2:nth-child(1){
+   color: rgb(146, 147, 145);
+ }
+
+ #last{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    border:0px solid blue;
+    display: flex
+    
+ }
+ #last>h2{
+    color:rgb(146, 147, 145) ;
+ }
+
+        /*************************  END OF FOOTER STYLE *************************/
+
+</style>
+<body>
+    <div id="top">
+        <div id="div1">
+            <div>
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <p><b>Free Shipping</b></p>
+                
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-store"></i>
+                <p><b>Return To Store</b></p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-store"></i>
+                <p><b>Online Gift Card</b></p>
+            </div>
+
+        </div>
+        <div id="div2">
+          <div>
+            <p><b>Download Our Apps</b></p>
+          </div>
+          <div>
+            <p><b>Store Locator</b></p>
+          </div>
+          <div>
+            <p><b>Help</b></p>
+          </div>
+        </div>
+
+    </div>
+    <div id="navbar">
+      <div>
+        <img id="LOGOmax" src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png" alt="ICON">
+        <div>Women</div>
+        <div>Men</div>
+        <div>Girl</div>
+        <div>Boys</div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="What are you looking for?">
+
+      </div>
+      <div>
+        <div>More</div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+        <div><i class="fa-solid fa-suitcase"></i></div>
+      </div>
+
+    </div>
+    <div id="blue">
+    <h1>Flat 30-50% off + Extra ₹300 off + FREE Shipping! ></h1>
+    </div>
+<!-- ******************** BODY STARTS ************************* -->
+    <div id="WholeCont">
+
+        <div id="Container">
+            <img src="https://lh3.googleusercontent.com/Jun3igULJfTk-fW0BPLWI-hKeeRc5UipzRTnEa8YXaHdKQaTsV1UnSS4ueVbsFjJB2mTZSgwg7yXuNvpW80gU2S-V9m49ap01eTWu2aW3ld2pk_8iI3ZX6hC3u47S7Mx8TXQ97Xes5g=w2400" alt="">
+           </div>
+           <div >
+             <div><img src="data:image/png;base64,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" alt=""></div>
+             <div>FREE SHIPPING <br/> ON ALL ORDERS!</div>
+             <div><button id="btn"><b>SHOP NOW</b></button></div>
+
+           </div>
+           <hr>
+           <img id="img1" src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock14One-COMMONGIFTCARD-16SEP2022.png" alt="">
+           
+           
+           <H1 class="Heading" >Shop By Category</H1>
+           <div id="SbyCategory">
+            <div>
+                <img src="01.jpg" alt="">
+                <h3>Plus Size 3XL-6XL</h3>
+            </div>
+            <div>
+                <img src="02.jpg" alt="">
+                <h3>Available Online Only</h3>
+            </div>
+            <div>
+                <img src="03.jpg" alt="">
+                <h3>Kurtas</h3>
+            </div>
+            <div>
+                <img src="04.jpg" alt="">
+                <h3>Suits & Sets</h3>
+            </div>
+            <div>
+                <img src="05.jpg" alt="">
+                <h3>Fusion Dresses</h3>
+            </div>
+            <div>
+                <img src="06.jpg" alt="">
+                <h3>Sweatshirts</h3>
+            </div>
+            <div>
+                <img src="07.jpg" alt="">
+                <h3>Tops & Tees</h3>
+            </div>
+            <div>
+                <img src="08.jpg" alt="">
+                <h3>Dresses</h3>
+            </div>
+            <div>
+                <img src="09.jpg" alt="">
+                <h3>Bottoms</h3>
+            </div>
+            <div>
+                <img src="10.jpg" alt="">
+                <h3>Sleepwear & Lingerie</h3>
+            </div>
+            <div>
+                <img src="11.jpg" alt="">
+                <h3>Active wear</h3>
+            </div>
+            <div>
+                <img src="12.jpg" alt="">
+                <h3>Add-Ons</h3>
+            </div>
+           </div>
+           <hr>
+           <H1 class="Heading" >New In</H1>
+           <div id="New_In">
+            <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Women-29SEP2022AB.png" alt=""></div>
+            <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-B-Women-29SEP2022AB.png" alt=""></div>
+           </div>
+           <hr>
+
+           <H1 class="Heading" >Shop By Festivity</H1>
+           <div id="New_In">
+            <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock17One-Women-15SEP2022A.png" alt=""></div>
+            <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock17Two-Women-15SEP2022A.png" alt=""></div>
+           </div>
+           <hr>
+           <H1 class="Heading" >Festive Must-Haves</H1>
+           <div id="Festive">
+           <div>
+            <img src="100.jpg" alt="">
+                <h3>Tunics</h3>
+           </div>
+           <div>
+            <img src="101.jpg" alt="">
+                <h3>Kurta Sets</h3>
+           </div>
+           <div>
+            <img src="102.jpg" alt="">
+                <h3>Embroidered Kurtas</h3>
+           </div>
+           <div>
+            <img src="104.jpg" alt="">
+                <h3>Printed Kurtas</h3>
+           </div>
+           <div>
+            <img src="105.jpg" alt="">
+                <h3>Occasions sets</h3>
+           </div>
+           <div>
+            <img src="106.jpg" alt="">
+                <h3>Add-Ons</h3>
+           </div>
+           </div>
+           <hr>
+           <H1 class="Heading" >Budget Zone</H1>
+           <div id="Budget">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19One-Women-15SEP2022.png" alt="">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Two-Women-15SEP2022.png" alt="">
+            <img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Three-Women-15SEP2022.png" alt="">
+           </div>
+            <hr>
+            <H1 class="Heading" >Youth Store</H1>
+            <img  class="img2"  src="https://lmsin.net/cdn-cgi/image/w=1232,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBytwo1A-Women-29SEP2022.png" alt="">
+            <hr>
+            <H1 class="Heading" >Top Stores</H1>
+            <div id="New_In">
+             <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-Women-modularblock8-oneBythree-A-Women-29SEP2022.png" alt=""></div>
+             <div><img src="https://lmsin.net/cdn-cgi/image/w=616,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock8-oneBythree-B-Women-29SEP2022.png" alt=""></div>
+            </div>
+            <hr>
+ 
+            <H1 class="Heading" >Hot Trends</H1>
+            <div id="New_In">
+             <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock7-oneBythree-A-Women-29SEP2022.png" alt=""></div>
+             <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=70,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock7-oneBythree-B-Womenn-29SEP2022.png" alt=""></div>
+            </div>
+             <img class="img2" src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-9modularblock-oneBythree-A-Women-15SEP2022.png" alt="">
+            <hr>
+            <H1 class="Heading" >Connect With Us</H1>
+            <img class="img2" src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedAD8AF927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock8-oneBythree-A-Women-21Oct2020.jpg" alt="">
+
+            <hr>
+
+
+    </div>                    
+
+    <!-- ************************** END OF BODY **************************** -->
+    <!-- ************** START OF FOOTER ************** -->
+    <div id="Footer">
+        <div id="Subscribe">
+         <div>
+           <h1>Subscribe to our awesome emails.</h1>
+           <h2>Get our latest offers and news straight in your inbox.</h2>
+           <div id="div1">
+               <input type="text" placeholder="Please enter an email address">
+               <button>Subscribe</button>
+           </div>
+         </div>
+         <div>
+            <h1>Download our apps</h1>
+            <h2>Shop our products and offers on-the-go.</h2>
+            <div id="div2">
+                <img src="https://w7.pngwing.com/pngs/822/688/png-transparent-apple-on-the-app-store-screenshot-iphone-app-store-google-play-store-electronics-text-logo.png" alt="">
+                <img src="https://homerevon.com/wp-content/uploads/2021/01/homerevon-google-playstore-download.png" alt="">
+            </div>
+
+         </div>
+        </div>
+        <div id="middle">
+        <div>
+            <h2>Women</h2>
+            <p>Tops</p>
+            <p>Dresses & Jumpsuits</p>
+            <p>Sportswear</p>
+            <p>Bottoms</p>
+            <p>Winterwear</p>
+            <p>Ethnicwear</p>
+            <p>Lingerie</p>
+            <p>Sleepwear</p>
+            <p>Accessories</p>
+            <p>Shoes</p>
+        </div>
+        <div>
+            <h2>Men</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Sportswear</p>
+            <p>Winterwear</p>
+            <p>Accessories</p>
+            <p>Shoes</p>  
+        </div>
+        <div>
+            <h2>Boys</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Indian Wear</p>
+            <p>Winter Wear</p>
+            <p>Winterwear</p>
+            <p>Essentials</p>
+            <p>Accessories</p>
+            <p>Shoes</p>  
+        </div>
+        <div>
+            <h2>Girls</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Indian Wear</p>
+            <p>Winter Wear</p>
+            <p>Winterwear</p>
+            <p>Essentials</p>
+            <p>Accessories</p>
+            <p>Shoes</p>
+        </div>
+        <div>
+            <h2>Explore</h2>
+            <p>Offers</p>
+            <p>Magazine</p>
+        </div>
+        <div>
+            <h2>About</h2>
+            <p>About us</p>
+            <p>Write to us</p>
+            <p>Careers</p>
+            <p>Take a Tour</p>
+            <p>Blog</p>
+            <p>Store Locator</p>
+            <p>Landmark Cares</p>
+    
+
+        </div>
+        <div>
+            <h2>Help</h2>
+            <p>Contact us</p>
+            <p>Shipping</p>
+            <p>Returns Process</p>
+            <p>Returns Policy</p>
+            <p>Help Centre</p>
+        </div>
+        </div>
+        <hr>
+        <div id="Slast">
+            <div>
+                <div>
+                    <div id="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h2>Talk to us</h2>
+                        <h2>1800-123-1444</h2>
+                    </div>
+                </div>
+                <div>
+                    <div id="icon"><i class="fa-solid fa-clipboard-question"></i></div>
+                    <div>
+                        <h2>Helpcentre</h2>
+                        <h2>help.maxfashion.com</h2>
+                    </div>
+                </div>
+                <div>
+                    <div id="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div>
+                        <h2>Write to us</h2>
+                        <h2>help.in@maxfashion.com</h2>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook-f"></i> 
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+        </div>
+        <hr>
+       </div>
+       <div id="last">
+        <img id="LOGOmax" src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png" alt="ICON">
+        <h2>© 2022 Retail World Limited.<br />
+            Terms & Conditions - Privacy Policy<h2> 
+        
+    </div>
+
+    <!-- **************** END OF Footer **************** -->
+
+    
+
+</body>
+</html>
