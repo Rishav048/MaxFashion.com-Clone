@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENS PAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<style>
+ /* *******************************************  STYLE FOR Top section of NAVBAR  ************************************* */
+ #top{
+        width: 100%;
+        height: auto;
+        border:0px solid red;
+        display:flex;
+        justify-content: space-between;
+        background-color: black;
+        cursor: pointer;
+        padding-left: 50px;
+
+    }
+
+    #div2{
+        border: 0px solid rgb(252, 47, 74);
+        width: 25%;
+        height: auto; 
+        display: flex;
+    }
+
+    #div1{
+        border: 0px solid blue;
+        width: 25%;
+        height: auto;
+        display: flex;
+        margin-left: 50px;
+    }
+    #div1>div{
+        width:20%;
+        height: auto;
+        border:0px solid green;
+        font-size: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 30px;
+
+        
+    }
+
+
+    #div2>div{
+        width:25%;
+        height: auto;
+        border:0px solid rgb(151, 30, 30);
+        font-size: 13px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        border-right-color:  rgb(192, 188, 188);
+                
+    }
+    #top p{
+        color: rgb(243, 232, 232);
+        font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+    #top i{
+        color: rgb(243, 232, 232);
+    }
+
+    /* *******************************************  STYLE FOR NAVBAR  ************************************* */
+    #navbar{
+        border:0px solid red;
+        width: 100%;
+        height: 70px;
+        display:flex;
+        justify-content: space-between;
+        background-color: rgb(247, 248, 247);
+        position: fixed;
+       
+    
+    }
+
+    #navbar>div:nth-child(1){
+        border:0px solid rgb(238, 209, 48);
+        width: 28%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+       
+    }
+    #navbar>div:nth-child(2){
+        border:0px solid rgb(238, 209, 48);
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 300px;
+        font-size: 30px;
+    }
+
+    #navbar>div:nth-child(2)>i{
+        height: 61%;
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+        font-size:18px ;
+        background-color: rgb(236, 237, 235);
+        
+        
+    }
+    #navbar>div:nth-child(2)>input{
+        height: 60%;
+        width: 85%;
+        font-size: 18px;
+        background-color: rgb(236, 237, 235);
+        border: none;
+    }
+    #navbar>div:nth-child(3){
+        border:0px solid rgb(238, 209, 48);
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+    }
+    #LOGOmax{
+        width:140px;
+        height: 100%;
+    }
+    #navbar>div>div{
+        border: 0px solid brown;
+        font-weight: bold;
+        font-size: 18px;
+        height: 100%;
+        width: 24%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #navbar>div>div:hover{
+     background-color: white;
+     color: blue;
+    }
+    #men{
+        text-decoration: none;
+        color: black;
+    } 
+    #men:hover{
+        color: blue;
+    }
+    #cart{
+        color: black; 
+    }
+    #cart:hover{
+        color: blue;
+    }
+    /* *******************************************  End STYLE FOR NAVBAR  ************************************* */
+    /*********************************** START OF FOOTER STYLE **********************/
+    #Subscribe{
+        width: 100%;
+        height: 300px;
+        border:0px solid blue;
+        display: flex;
+        justify-content:space-around;
+
+    }
+    #Subscribe>div{
+        width: 40%;
+        height:100%;
+        border: 0px solid rgb(32, 218, 103);
+    }
+    #div1{
+        border:0px solid red;
+        width: 90%;
+        margin-left: 0px;
+    }
+
+     #Subscribe input{
+     height: 62px;
+     width: 70%;
+     font-size: 30px;
+     background-color: rgb(236, 237, 235);
+     border:none
+   }
+   #Subscribe button{
+    height: 65PX;
+     width: 28%;
+     font-size: 30px;background-color: black;
+     color: beige;
+     border-radius: 5px;
+   }
+   #div2{
+    border: 0px solid greenyellow;
+    width: 100%;;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+   }
+   #div2>img{
+    height: 80px;
+    width: 40%;
+   }
+   #Subscribe h2{
+    color:rgb(146, 147, 145);
+   }
+   /* *************** style of middle section *************** */
+   #middle{
+    width: 90%;
+    margin: auto;
+    height: auto;
+    border:0px solid blue;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+   }
+
+   #middle>div>h2{
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 18px;
+   }
+
+   #middle>div>p{
+    font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 16px;
+    color: #5d5e5c;
+    line-height: 20px;
+}
+
+ #middle>div{
+    border: 0px solid green;
+ }  
+
+ #Slast{
+    width: 90%;
+    margin: auto;
+    height: 120px;
+    border:0px solid blue;
+    display: flex;
+    justify-content: space-between;
+    ;
+ }
+ #Slast>div:nth-child(1){
+    width: 65%;
+    height: 100%;
+    border:0px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+ }
+
+ #Slast>div:nth-child(1)>div{
+   border: 0px solid black;;
+   display: flex;
+   align-items: center;
+ }
+
+
+ #Slast>div:nth-child(2){
+    width: 15%;
+    height: 100%;
+    border:0px solid red;
+    display: flex;
+    font-size: 30px;
+    justify-content: space-around;
+    align-items: center;
+    
+ }
+ #icon{
+    border: 1px solid rgb(146, 147, 145);
+    width: 25%;
+    font-size: 30px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right:5px;
+    border-radius: 50%;
+
+ }
+ #icon+div>h2:nth-child(1){
+   color: rgb(146, 147, 145);
+ }
+
+ #last{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    border:0px solid blue;
+    display: flex
+    
+ }
+ #last>h2{
+    color:rgb(146, 147, 145) ;
+ }
+
+        /*************************  END OF FOOTER STYLE *************************/
+    
+   /***************************** STYLE OF CTOP STARTS *******************/
+    #Ctop{
+        width: 100%;
+        border: 0px solid red;
+        height: auto;
+        padding-top: 20px;
+        font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-size: large;
+        padding-left:10px;
+        margin-top: 70px;
+
+    }
+    #Ctop>div:nth-child(3){
+        width: 30%;
+        height:60px;
+        border: 0px solid blue;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+    #Ctop>div:nth-child(3)>div{
+        border: 1px solid rgb(243, 232, 232);
+        width: 30%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        border-radius: 7px;
+    }
+    #Ctop>div:nth-child(3)>div:hover{
+        border:1px solid blue;
+        border-radius: 5px;
+    }
+    #Ctop img{
+        width: 30%;
+        height: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
+    #Select_Box{
+        width: 100%;
+        height: auto;
+        border: 0px solid yellow;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        background-color: rgb(247, 248, 247);
+        
+    }
+    #Select_Box>select{
+       margin:10px;
+       height: 40px;
+       border-radius: 5px;
+       border:1px solid rgb(218, 212, 212);
+       
+    }
+    option{
+        font-size: 20px;
+         color: rgb(136, 132, 132);
+         
+         
+    }
+    #Ctop>div:nth-child(1){
+        color: rgb(136, 132, 132);
+        font-size: 14px;
+        
+    }
+    #countdiv{
+        width: 100%;
+        height: auto;
+        border:0px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(150, 144, 144);
+        font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+        font-weight: bold;
+    }
+    #countdiv select{
+        height: 40px;
+        width: 200px;
+    }
+    /********************** Container Div Style Starts *****************************/
+#Container{
+    border: 0px solid blue;
+    width:95%;
+    margin: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    
+}
+
+#Container>div{
+    border: 0px solid gold;
+    padding-bottom: 20px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+}
+#Container>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#Container>div>img{
+    width: 100%;
+    
+}
+
+#Container>div>button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(48, 48, 177);
+    color: white;
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+     /********************** Container Div Style ENDS *****************************/
+#tOpall{
+    width: 100%;
+    height: auto;
+    border: 0px solid red;
+}
+
+#bottom{
+margin: auto;
+width: 300px;
+height: auto;
+font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+text-align: center;
+margin-bottom: 70px;
+margin-top: 100px;
+}
+#bottom>div{
+    border: 1px solid blue;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   color: blue;
+   justify-content: center;
+
+}
+</style>
+<body>
+  <!-- ********************** START OF NAVBAR ************************* -->
+ 
+
+ <div id="tOpall">
+    <div id="top">
+        <div id="div1">
+            <div>
+                <i class="fa-sharp fa-solid fa-truck"></i>
+                <p><b>Free Shipping</b></p>
+                
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-store"></i>
+                <p><b>Return To Store</b></p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-store"></i>
+                <p><b>Online Gift Card</b></p>
+            </div>
+    
+        </div>
+        <div id="div2">
+          <div>
+            <p><b>Download Our Apps</b></p>
+          </div>
+          <div>
+            <p><b>Store Locator</b></p>
+          </div>
+          <div>
+            <p><b>Help</b></p>
+          </div>
+        </div>
+    
+    </div>
+    <div id="navbar">
+      <div>
+        <img id="LOGOmax" src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png" alt="ICON">
+        <div>Women</div>
+        <div><a  id="men" href="Mens_Page.html">Men</a></div> 
+        <div>Girl</div>
+        <div>Boys</div>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="What are you looking for?">
+    
+      </div>
+      <div>
+        <div>More</div>
+        <div><i class="fa-regular fa-user"></i></div>
+        <div><i class="fa-regular fa-heart"></i></div>
+        <div> <a id="cart" href="Mycart.html"><i class="fa-solid fa-suitcase"></i></a></i></div>
+      </div>
+    
+    </div>
+
+
+ </div>
+
+    <!-- /********************** END OF NAVBAR *****************************/ -->
+    <div id="Ctop">
+      <div>
+          Home <i class="fa-solid fa-caret-right"></i>  Men  <i class="fa-solid fa-caret-right"></i>  Indian Wear
+      </div>
+      <h1>Indian Wear</h1>
+      <div id="TWO">
+        <div>
+            <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010661372-Blue-Navy-1000010661372-9152021_01-2100.jpg" alt="">
+            <p>Jackets</p>
+        </div>
+        <div>
+            <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009769017-Black-Black-1000009769017-12162020_01-2100.jpg" alt="">
+            <p>Kurtas</p>
+        </div>
+        <div>
+            <img src="https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011622385-Beige-BEIGE-1000011622385-09082022_02-2100.jpg" alt="">
+            <p>Sets</p>
+        </div>
+      </div>
+      <div id="Select_Box">
+        <select>
+            <option value="" disabled selected hidden>Price</option>
+            <option value="">450 -- 1299</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Type</option>
+            <option value="">Kurtas</option>
+            <option value="">Kurta</option>
+            <option value="">Bottom</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Style</option>
+            <option value="">Traditional</option>
+            <option value="">Casual</option>
+            <option value="">Occasion</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Design</option>
+            <option value="">Printed</option>
+            <option value="">Solid</option>
+            <option value="">Textured</option>
+            <option value="">Stripes</option>
+            <option value="">Embroidered</option>
+            <option value="">Striped</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Size</option>
+            <option value="">M</option>
+            <option value="">L</option>
+            <option value="">S</option>
+            <option value="">XL</option>
+            <option value="">XXL</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Color</option>
+            <option value="">Blue</option>
+            <option value="">Red</option>
+            <option value="">Yellow</option>
+            <option value="">Beige</option>
+            <option value="">Green</option>
+            <option value="">White</option>
+            <option value="">Brown</option>
+            <option value="">Orange</option>
+            <option value="">Black</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Sleeve Length</option>
+            <option value="">Full Sleeves</option>
+            <option value="">Half Sleeves</option>
+            <option value="">Sleeveless</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Browse</option>
+            <option value="">New</option>
+            <option value="">40% OFF</option>
+            <option value="">50% OFF</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Promotions</option>
+            <option value="">FEST300NEW100</option>
+            <option value="">Sale</option>
+           
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Fit</option>
+            <option value="">Regular</option>
+            <option value="">Slim</option>
+          </select>
+          <select >
+            <option value="" disabled selected hidden>Discount Range</option>
+            <option value="">50% and above</option>
+            <option value="">40% and above</option>
+            <option value="">Less than 10%</option>
+          </select>
+      </div>
+      <div id="countdiv">
+       <P>119 Products</P>
+       <div>Sort By <select >
+        <option value="" >Relevance</option>
+        <option value="">New Arrivals</option>
+        <option value="">Discount</option>
+        <option value="">Price Low to High</option>
+        <option value="">Price High to Low</option>
+        <option value="">Alphabetical</option>
+      </select>
+       </div>
+      </div>
+    </div>
+
+    <!-- /********************** Container Div Starts *****************************/ --> 
+    <div id="Container">
+      
+     
+    </div>
+    <div id="bottom">
+        <p>48 products out of 103</p>
+       <div>
+        LOAD MORE PRODUCTS
+       </div>
+    </div>
+
+     <!-- ************** START OF FOOTER ************** -->
+     <div id="Footer">
+        <div id="Subscribe">
+         <div>
+           <h1>Subscribe to our awesome emails.</h1>
+           <h2>Get our latest offers and news straight in your inbox.</h2>
+           <div id="div1">
+               <input type="text" placeholder="Please enter an email address">
+               <button>Subscribe</button>
+           </div>
+         </div>
+         <div>
+            <h1>Download our apps</h1>
+            <h2>Shop our products and offers on-the-go.</h2>
+            <div id="div2">
+                <img src="https://w7.pngwing.com/pngs/822/688/png-transparent-apple-on-the-app-store-screenshot-iphone-app-store-google-play-store-electronics-text-logo.png" alt="">
+                <img src="https://homerevon.com/wp-content/uploads/2021/01/homerevon-google-playstore-download.png" alt="">
+            </div>
+
+         </div>
+        </div>
+        <div id="middle">
+        <div>
+            <h2>Women</h2>
+            <p>Tops</p>
+            <p>Dresses & Jumpsuits</p>
+            <p>Sportswear</p>
+            <p>Bottoms</p>
+            <p>Winterwear</p>
+            <p>Ethnicwear</p>
+            <p>Lingerie</p>
+            <p>Sleepwear</p>
+            <p>Accessories</p>
+            <p>Shoes</p>
+        </div>
+        <div>
+            <h2>Men</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Sportswear</p>
+            <p>Winterwear</p>
+            <p>Accessories</p>
+            <p>Shoes</p>  
+        </div>
+        <div>
+            <h2>Boys</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Indian Wear</p>
+            <p>Winter Wear</p>
+            <p>Winterwear</p>
+            <p>Essentials</p>
+            <p>Accessories</p>
+            <p>Shoes</p>  
+        </div>
+        <div>
+            <h2>Girls</h2>
+            <p>Tops</p>
+            <p>Bottoms</p>
+            <p>Indian Wear</p>
+            <p>Winter Wear</p>
+            <p>Winterwear</p>
+            <p>Essentials</p>
+            <p>Accessories</p>
+            <p>Shoes</p>
+        </div>
+        <div>
+            <h2>Explore</h2>
+            <p>Offers</p>
+            <p>Magazine</p>
+        </div>
+        <div>
+            <h2>About</h2>
+            <p>About us</p>
+            <p>Write to us</p>
+            <p>Careers</p>
+            <p>Take a Tour</p>
+            <p>Blog</p>
+            <p>Store Locator</p>
+            <p>Landmark Cares</p>
+    
+
+        </div>
+        <div>
+            <h2>Help</h2>
+            <p>Contact us</p>
+            <p>Shipping</p>
+            <p>Returns Process</p>
+            <p>Returns Policy</p>
+            <p>Help Centre</p>
+        </div>
+        </div>
+        <hr>
+        <div id="Slast">
+            <div>
+                <div>
+                    <div id="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h2>Talk to us</h2>
+                        <h2>1800-123-1444</h2>
+                    </div>
+                </div>
+                <div>
+                    <div id="icon"><i class="fa-solid fa-clipboard-question"></i></div>
+                    <div>
+                        <h2>Helpcentre</h2>
+                        <h2>help.maxfashion.com</h2>
+                    </div>
+                </div>
+                <div>
+                    <div id="icon"><i class="fa-regular fa-envelope"></i></div>
+                    <div>
+                        <h2>Write to us</h2>
+                        <h2>help.in@maxfashion.com</h2>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-facebook-f"></i> 
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+        </div>
+        <hr>
+       </div>
+       <div id="last">
+        <img id="LOGOmax" src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png" alt="ICON">
+        <h2>© 2022 Retail World Limited.<br />
+            Terms & Conditions - Privacy Policy<h2> 
+        
+    </div>
+
+    <!-- **************** END OF Footer **************** -->
+</body>
+</html>
+
+<script>
+
+let ProductArr =[
+    {
+    img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011360337-Yellow-OCRE-1000011360337-31072022_01-2100.jpg",  
+    price: 899,
+    name: "MAX Men Floral Printed Short Kurta",
+    },
+
+    {
+    img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011444067-Yellow-YELLOW-1000011444067-09082022_01-2100.jpg",  
+    price: 799,
+    name: "MAX Men Textured Band Collar Short Kurta",
+     },
+
+     {
+    img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011450312-Red-MAROON-1000011450312-09072022_01-2100.jpg",  
+    price: 599,
+    name: "MAX Men Solid Full Sleeves Short Kurta",
+     },
+
+     
+     {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011359476-Green-OLIVEGREEN-1000011359476-15092022_01-2100.jpg",  
+        price:599 ,
+        name: "MAX Men Striped Slim Fit Short Kurta",
+     }, 
+        
+     {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011224852-Blue-NAVY-1000011224852-26042022_01-2100.jpg",  
+        price: 999,
+        name: "MAX Men Solid Short Kurta",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011722857-Yellow-YELLOW-1000011722857-02092022_01-2100.jpg",  
+        price:699 ,
+        name: "MAX Men Kalamkari Printed Short Kurta",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011722907-Blue-NAVY-1000011722907-15092022_01-2100.jpg",  
+        price: 799,
+        name: "MAX Men Printed Band Collar Short Kurta",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011359463-Red-RED-1000011359463-09082022_01-2100.jpg",  
+        price:899 ,
+        name: "MAX Men Striped Short Kurta Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010122132-White-White-1000010122132-2202021_01-2100.jpg",  
+        price: 499,
+        name: "MAX Men Solid Shirt Kurta with Band Collar",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011722805-Blue-NAVY-1000011722805-26082022_01-2100.jpg",  
+        price: 899,
+        name: "MAX Men Printed Mandarin Collar Kurta",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011769019-Green-OLIVEGREEN-1000011769019-09082022_02-2100.jpg",  
+        price: 1299,
+        name: "MAX Men Textured Slim Fit Pants",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011445515-Blue-BLUE-1000011445515-02092022_02-2100.jpg",  
+        price: 1700,
+        name: "AX Men Solid Full Length Casual Trouser",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011751346-Brown-KHAKI-1000011751346-09082022_01-2100.jpg",  
+        price: 600,
+        name: "MAX Men Solid Drawstring Waist Fit Trouser",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011152271-Grey-GREY-1000011152271-21042022_01-2100.jpg",  
+        price:1200 ,
+        name: "MAX Men Solid Waist Carrot Fit Trouser",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011057525-Green-OLIVEGREEN-1000011057525-22062022_01-2100.jpg",  
+        price: 999,
+        name: "MAX Men Solid Jogger Trouser",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011445515-Black-BLACK-1000011445515-09082022_01-2100.jpg",  
+        price: 1500,
+        name: "MAX Men Solid Slim Fit Trouser",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011495940-Blue-MIDBLUE-1000011495940-29052022_01-2100.jpg",  
+        price: 1399,
+        name: "MAX Men Solid Jogger Trouser",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011167900-Beige-BEIGE-1000011167900-10032022_01-2100.jpg",  
+        price: 899,
+        name: "MAX Men Solid Slim Fit Chinos",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011445515-Blue-BLUE-1000011445515-02092022_03-2100.jpg",  
+        price:1100,
+        name: "MAX Men Solid Full Length Skinny Fit Casual",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011439964-Green-OLIVEGREEN-1000011439964-09072022_01-2100.jpg",  
+        price: 749,
+        name: "MAX Men Solid Casual Jacket",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011234912-Blue-BLUE-1000011234912-26042022_01-2100.jpg",  
+        price: 799,
+        name: "MAX Men Printed Slim Fit Crew Neck T-shirt",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011854076-Blue-LIGHTBLUE-1000011854076-09082022_01-2100.jpg",  
+        price: 1199,
+        name: "MAX Men Printed Slim Fit Casual Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011362516-Green-GREEN-1000011362516-16072022_01-2100.jpg",  
+        price:699,
+        name: "Men Striped Slim Fit Polo T-shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011763164-Green-OLIVEGREEN-1000011763164-13092022_01-2100.jpg",  
+        price:1200,
+        name: "MAX Men Solid Full Sleeves Casual Jacket",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011512188-Green-GREEN-1000011512188-26082022_01-2100.jpg",  
+        price: 1199,
+        name: "MAX Men Colourblocked Full Sleeves T-Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011463842-Blue-INDIGO-1000011463842-31072022_01-2100.jpg",  
+        price: 599,
+        name: "MAX Men Solid Slim Fit Polo T-Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011487075-Red-MAROON-1000011487075-31072022_01-2100.jpg",  
+        price:524,
+        name: "MAX Men Solid Collar Regular Fit Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011805319-Green-GREEN-1000011805319-13092022_01-2100.jpg",  
+        price: 999,
+        name: "MAX Men Striped Short Sleeves Casual Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011359030-Blue-ROYALBLUE-1000011359030-16072022_01-2100.jpg",  
+        price: 699,
+        name: "MAX Men Printed Crew Neck Slim Fit ",
+    }, 
+
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011345504-White-WHITE-1000011345504-25072022_01-2100.jpg",  
+        price: 699,
+        name: "MAX Men Colourblocked Slim Fit Polo T-shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010541186-Blue-Navy-1000010541186-7092021_01-2100.jpg",  
+        price: 269,
+        name: "MAX Men Printed Elasticated Waist Shorts",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010541186-Grey-Grey-1000010541186-7092021_01-2100.jpg",  
+        price: 269,
+        name: "MAX Men Printed Elasticated Waist Shorts",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010541378-Grey-Chrmel-1000010541378-7092021_01-2100.jpg",  
+        price: 419,
+        name: "MAX Men Solid Crew Neck T-shirt - Set of 2",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011367174-Yellow-MUSTARD-1000011367174-22062022_01-2100.jpg",  
+        price: 599,
+        name: "MAX Men Printed Sports Jogger",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011359030-Blue-ROYALBLUE-1000011359030-16072022_01-2100.jpg",  
+        price: 566,
+        name: "MAX Men Printed Crew Neck Slim Fit",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010930469-Grey-GREYMELANGE-1000010930469-25072022_01-2100.jpg",  
+        price: 688,
+        name: "MAX Men Solid Slim Fit Track Pants",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011365982-Blue-NAVY-1000011365982-22062022_01-2100.jpg",  
+        price: 279,
+        name: "MAX Men Printed Regular Fit Crew Neck Sports T-shirt",
+    }, 
+     
+
+
+]
+
+let CartArr = JSON.parse(localStorage.getItem("MyCart"))||[];
+
+ProductArr.forEach(function(el){
+    let card = document.createElement("div");
+
+    let ProductImg = document.createElement("img");
+    ProductImg.src = el.img_url;
+
+    let Price = document.createElement("h2");
+    Price.innerText = el.price
+
+    let Title = document.createElement("p");
+    Title.innerText = el.name;
+
+    let btn = document.createElement("button");
+    btn.innerText = "ADD TO BASKET";
+    btn.addEventListener("click",function(){
+          ADDtoCart(el);
+    })
+
+    card.append(ProductImg,Price,Title,btn);
+    document.querySelector("#Container").append(card);
+})
+
+
+
+function ADDtoCart(el){
+    
+    CartArr.push(el);
+    localStorage.setItem("MyCart", JSON.stringify(CartArr))
+
+}
+
+</script>

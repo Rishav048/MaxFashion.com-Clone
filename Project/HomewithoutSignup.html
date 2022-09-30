@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>HomeWT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <style>
@@ -131,7 +131,7 @@
     }
     #navbar>div:nth-child(3){
         border:0px solid rgb(238, 209, 48);
-        width: 20%;
+        width: 37%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -156,19 +156,8 @@
      background-color: white;
      color: blue;
     }
-    #men{
-        text-decoration: none;
-        color: black;
-    } 
-    #men:hover{
-        color: blue;
-    }
-    #cart{
-        color: black; 
-    }
-    #cart:hover{
-        color: blue;
-    }
+    
+   
     /* *******************************************  End STYLE FOR NAVBAR  ************************************* */
     #blue{
       width: 100%;
@@ -464,7 +453,15 @@
     color:rgb(146, 147, 145) ;
  }
 
+ 
+
         /*************************  END OF FOOTER STYLE *************************/
+#signup a{
+  
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+ }
 
 </style>
 <body>
@@ -502,7 +499,7 @@
       <div>
         <img id="LOGOmax" src="https://www.landmarkgroup.com/int/sites/default/files/Brand-logo/New%20Max%20Logo-%20Eng%20With%20Outline_1.png" alt="ICON">
         <div>Women</div>
-        <div><a  id="men" href="Mens_Page.html">Men</a></div> 
+        <div>Men</div> 
         <div>Girl</div>
         <div>Boys</div>
       </div>
@@ -511,11 +508,11 @@
         <input type="text" placeholder="What are you looking for?">
 
       </div>
-      <div>
+      <div id="tsign">
         <div>More</div>
-        <div><i class="fa-regular fa-user"></i></div>
+        <div id="signup" ><a href="SignUp.html">Sign Up/Sign In</a></div>
         <div><i class="fa-regular fa-heart"></i></div>
-        <div> <a id="cart" href="Mycart.html"><i class="fa-solid fa-suitcase"></i></a></i></div>
+        <div><i class="fa-solid fa-suitcase"></i></div>
       </div>
 
     </div>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CART</title>
+</head>
+<style>
+   body{
+    margin-left: 15px;
+   }
+   #Wcontainer{
+    width: 98;
+    margin: auto;
+    border: 1px solid red;
+    height: 700px;
+    display: flex;
+    gap: 20px;
+   }
+   #cardHolder{
+    width: 65%;
+    height: 100%;
+    border: 0px solid green;
+   }
+    
+    #Side{
+        width: 35%;
+        height: auto;
+       border: 0px solid rgb(28, 231, 28);
+    }
+    #Side>div:nth-child(1){
+     width: 100%;
+     height:150px;
+     border: 1px solid rgb(197, 197, 197);
+    }
+    #Side>div:nth-child(1)>div:nth-child(1){
+     width: 100%;
+     height:50%;
+     border: 0px solid rgb(255, 0, 191);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+    #Side>div:nth-child(1)>div:nth-child(2){
+     width: 90%;
+     height:40%;
+     background-color: rgb(255, 224, 229);
+     margin: auto;
+     border: 0px solid rgb(255, 0, 191);
+     border-radius: 5px;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     
+     
+    }
+    #Side input{
+    text-align: center;
+    height: 50%;
+    border-radius: 7px;
+    border:1px solid rgb(196, 191, 191);
+    }
+    #Side button{
+    text-align: center;
+    height: 55%;
+    border-radius: 7px;
+    border:1px solid rgb(196, 191, 191);
+    width: 120px;
+    background-color: white;
+    color: rgb(196, 191, 191);
+    }
+    #Side>div:nth-child(2){
+     width: 100%;
+     height:120px;
+     border: 1px solid rgb(197, 197, 197);
+     display: flex;
+     margin-top: 10px;
+    }
+    #Side>div:nth-child(2) img{
+        height: 100%;
+        width: 30%;
+        margin-right: 30px;
+    }
+    #Side>div:nth-child(3)>div{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #Side>div:nth-child(3)>div>h4{
+       font-weight: 150;
+    }
+
+    #five{
+        text-align: center;
+        background-color: blue;
+        margin-left: 150px;
+        color:rgb(235, 227, 227);
+        
+    }
+    #five1{
+        background-color: blue;
+    
+    }
+</style>
+<body>
+    <h1>Your Shopping Basket</h1>
+    <hr>
+    <h3><span></span>Products</h3>
+    <div id="Wcontainer">
+      <div id="cardHolder"></div>
+      <div id="Side">
+        <div>
+            <div>
+                <h3>Deliver to</h3>
+                <input type="text" placeholder="Enter pincode">
+                <button>Check</button>
+            </div>
+            <div>
+                Enter pin code in box above for delivery estimates and charges
+            </div>
+        </div>
+        <div>
+            <img src="https://www.maxfashion.in/static/icons/gift-box.png" alt="">
+            <div>
+            <h3>Offers for you !</h3>
+            <p>Choose and apply voucher in 2 simple steps</p>
+            </div>
+            
+        </div>
+        <div>
+            <div id="one">
+                <h4>Total MRP</h4>
+                <h3>0</h3>
+            </div>
+            <div id="two">
+                <h4>Offer discount</h4>
+                <h3 style="color:green">0000</h3>
+            </div>
+            <div id="three">
+                <h4>Shipping charge</h4>
+                <h4>FREE</h4>
+            </div>
+            <hr>
+            <div id="four">
+                <h2>Total</h2>
+                <h2>00</h2>
+            </div>
+            <div id="five1">
+                <div  id="five">
+                    <h3>Checkout Now</h3>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
