@@ -9,7 +9,9 @@
 </head>
 <style>
  /* *******************************************  STYLE FOR Top section of NAVBAR  ************************************* */
+ 
  #top{
+      
         width: 100%;
         height: auto;
         border:0px solid red;
@@ -18,6 +20,7 @@
         background-color: black;
         cursor: pointer;
         padding-left: 50px;
+       
 
     }
 
@@ -77,9 +80,10 @@
         justify-content: space-between;
         background-color: rgb(247, 248, 247);
         position: fixed;
-       
+        
     
     }
+    
 
     #navbar>div:nth-child(1){
         border:0px solid rgb(238, 209, 48);
@@ -307,11 +311,12 @@
         width: 100%;
         border: 0px solid red;
         height: auto;
-        padding-top: 20px;
+        padding-top: 150px;
         font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
         font-size: large;
         padding-left:10px;
-        margin-top: 70px;
+       
+       
 
     }
     #Ctop>div:nth-child(3){
@@ -430,7 +435,9 @@
 #tOpall{
     width: 100%;
     height: auto;
-    border: 0px solid red;
+    border: 0px solid rgb(72, 218, 27);
+    position: fixed;
+    margin-top: -8px;
 }
 
 #bottom{
@@ -451,11 +458,12 @@ margin-top: 100px;
    justify-content: center;
 
 }
+
 </style>
 <body>
   <!-- ********************** START OF NAVBAR ************************* -->
  
-
+   
  <div id="tOpall">
     <div id="top">
         <div id="div1">
@@ -610,13 +618,13 @@ margin-top: 100px;
       </div>
       <div id="countdiv">
        <P>119 Products</P>
-       <div>Sort By <select >
-        <option value="" >Relevance</option>
-        <option value="">New Arrivals</option>
-        <option value="">Discount</option>
-        <option value="">Price Low to High</option>
-        <option value="">Price High to Low</option>
-        <option value="">Alphabetical</option>
+       <div>Sort By <select id="SortSelect">
+        <option value="Relevance" >Relevance</option>
+        <option value="New Arrivals">New Arrivals</option>
+        <option value="Discount">Discount</option>
+        <option value="PriceLow">Price Low to High</option>
+        <option value="PriceHigh">Price High to Low</option>
+        <option value="Alphabetical">Alphabetical</option>
       </select>
        </div>
       </div>
@@ -1003,14 +1011,127 @@ let ProductArr =[
         price: 279,
         name: "MAX Men Printed Regular Fit Crew Neck Sports T-shirt",
     }, 
-     
 
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011368313-Green-GREEN-1000011368313-27062022_01-2100.jpg",  
+        price: 1022,
+        name: "A Men Striped Slim Fit Formal ShirT",
+    },   
+     
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011368122-Green-GREEN-1000011368122-25072022_01-2100.jpg",  
+        price: 749,
+        name: "B Men Printed Jacquard Slim Fit Formal Shirt",
+    }, 
+
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010534567-Orange-Orange-1000010534567-7292021_01-2100.jpg",  
+        price: 532,
+        name: "C Men Textured Slim Fit Formal Shirt",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010534567-Green-Green-1000010534567-7292021_01-2100.jpg",  
+        price: 709,
+        name: "D Men Textured Slim Fit Formal ShirT",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011368009-Blue-BLUE-1000011368009-25072022_01-2100.jpg",  
+        price: 1245,
+        name: "E Men Textured Slim Fit Formal Shirt",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011093687-Blue-BLUE-1000011093687-07042022_01-2100.jpg",  
+        price: 300,
+        name: "F Men Slim Fit Hooded T-shirt",
+    }
+    ,
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011623014-Black-BLACK-1000011623014_01-2100.jpg",  
+        price: 1300,
+        name: "G Men Active Full Sleeves Hooded T-shirT",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011623014-Black-BLACK-1000011623014_03-2100.jpg",  
+        price: 400,
+        name: "H Men Active Full Sleeves Hooded T-shir",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011621207-Blue-BLUE-1000011621207_01-2100.jpg",  
+        price: 705,
+        name: "I Men Active Full Sleeves Hooded T-shir",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011093674-Blue-BLUE-1000011093674-21042022_01-2100.jpg",  
+        price: 800,
+        name: "J Men Printed Slim Fit Hooded T-shirt",
+    }, 
+    
+    {
+        img_url:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000011093661-Black-BLACK-1000011093661-07042022_03-2100.jpg",  
+        price: 309,
+        name: "K Men Printed Slim Fit Hooded T-shirt",
+    },    
 
 ]
 
+console.log(ProductArr.length)
 let CartArr = JSON.parse(localStorage.getItem("MyCart"))||[];
 
-ProductArr.forEach(function(el){
+
+let SelectTag = document.querySelector("#SortSelect")
+SelectTag.addEventListener("change", pricesort);
+
+function pricesort(){
+     let selected = document.querySelector("#SortSelect").value;
+     //console.log(selected)
+     if(selected == "PriceLow"){
+        ProductArr.sort(function(a,b){
+
+            return a.price - b.price;
+        })
+        displayTable();
+     }
+
+     if(selected == "PriceHigh"){
+        ProductArr.sort(function(a,b){
+
+            return b.price - a.price;
+        })
+        displayTable();
+     }
+
+     if(selected == "Alphabetical"){
+         
+        ProductArr.sort(function(a,b){
+
+            if(a.name > b.name) {
+                return 1;
+            }
+            if(a.name < b.name){
+                return -1;
+            }
+            else return 0;
+        })
+        displayTable();
+     }
+
+
+
+}
+
+displayTable();
+
+function displayTable(){
+
+    document.querySelector("#Container").innerHTML = "";
+
+    ProductArr.forEach(function(el){
     let card = document.createElement("div");
 
     let ProductImg = document.createElement("img");
@@ -1031,6 +1152,8 @@ ProductArr.forEach(function(el){
     card.append(ProductImg,Price,Title,btn);
     document.querySelector("#Container").append(card);
 })
+
+}
 
 
 

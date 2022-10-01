@@ -1,0 +1,314 @@
+/* *******************************************  STYLE FOR Top section of NAVBAR  ************************************* */
+#TopNav{
+    width: 100%;
+    height: auto;
+    border: 0px solid rgb(72, 218, 27);
+    position: fixed;
+    margin-top: -8px;
+}
+
+#top{
+    width: 100%;
+    height: auto;
+    border:0px solid red;
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+    cursor: pointer;
+    padding-left: 50px;
+    
+    
+
+}
+
+#div2{
+    border: 0px solid rgb(252, 47, 74);
+    width: 25%;
+    height: auto; 
+    display: flex;
+    
+    
+    
+}
+
+#div1{
+    border: 0px solid blue;
+    width: 25%;
+    height: auto;
+    display: flex;
+    margin-left: 50px;
+
+    
+
+
+    
+}
+#div1>div{
+    width:20%;
+    height: auto;
+    border:0px solid green;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+
+    
+}
+
+
+#div2>div{
+    width:25%;
+    height: auto;
+    border:0px solid rgb(151, 30, 30);
+    font-size: 13px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-right-color:  rgb(192, 188, 188);
+            
+}
+#top p{
+    color: rgb(243, 232, 232);
+    font-family: ProximaNova-Semibold, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+#top i{
+    color: rgb(243, 232, 232);
+}
+
+/* *******************************************  STYLE FOR NAVBAR  ************************************* */
+#navbar{
+    border:0px solid red;
+    width: 100%;
+    height: 70px;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(247, 248, 247);
+    position: fixed;
+   
+
+}
+
+#navbar>div:nth-child(1){
+    border:0px solid rgb(238, 209, 48);
+    width: 28%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+   
+}
+#navbar>div:nth-child(2){
+    border:0px solid rgb(238, 209, 48);
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 300px;
+    font-size: 30px;
+}
+
+#navbar>div:nth-child(2)>i{
+    height: 61%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size:18px ;
+    background-color: rgb(236, 237, 235);
+    
+    
+}
+#navbar>div:nth-child(2)>input{
+    height: 60%;
+    width: 85%;
+    font-size: 18px;
+    background-color: rgb(236, 237, 235);
+    border: none;
+}
+#navbar>div:nth-child(3){
+    border:0px solid rgb(238, 209, 48);
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+#LOGOmax{
+    width:140px;
+    height: 100%;
+}
+#navbar>div>div{
+    border: 0px solid brown;
+    font-weight: bold;
+    font-size: 18px;
+    height: 100%;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar>div>div:hover{
+ background-color: white;
+ color: blue;
+}
+#men{
+    text-decoration: none;
+    color: black;
+} 
+#men:hover{
+    color: blue;
+}
+#cart{
+    color: black; 
+}
+#cart:hover{
+    color: blue;
+}
+/* *******************************************  End STYLE FOR NAVBAR  ************************************* */
+
+
+/*********************************** START OF FOOTER STYLE **********************/
+#Subscribe{
+    width: 100%;
+    height: 300px;
+    border:0px solid blue;
+    display: flex;
+    justify-content:space-around;
+
+}
+#Subscribe>div{
+    width: 40%;
+    height:100%;
+    border: 0px solid rgb(32, 218, 103);
+}
+#div1{
+    border:0px solid red;
+    width: 90%;
+    margin-left: 0px;
+}
+
+ #Subscribe input{
+ height: 62px;
+ width: 70%;
+ font-size: 30px;
+ background-color: rgb(236, 237, 235);
+ border:none
+}
+#Subscribe button{
+height: 65PX;
+ width: 28%;
+ font-size: 30px;background-color: black;
+ color: beige;
+ border-radius: 5px;
+}
+#div2{
+border: 0px solid greenyellow;
+width: 100%;;
+height: 55%;
+display: flex;
+justify-content: space-between;
+}
+#div2>img{
+height: 80px;
+width: 40%;
+}
+#Subscribe h2{
+color:rgb(146, 147, 145);
+}
+
+/* *************** style of middle section *************** */
+#middle{
+width: 90%;
+margin: auto;
+height: auto;
+border:0px solid blue;
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: auto;
+}
+
+#middle>div>h2{
+font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-size: 18px;
+}
+
+#middle>div>p{
+font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+font-size: 16px;
+color: #5d5e5c;
+line-height: 20px;
+}
+
+#middle>div{
+border: 0px solid green;
+}  
+
+#Slast{
+width: 90%;
+margin: auto;
+height: 120px;
+border:0px solid blue;
+display: flex;
+justify-content: space-between;
+;
+}
+#Slast>div:nth-child(1){
+width: 65%;
+height: 100%;
+border:0px solid red;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+
+}
+
+#Slast>div:nth-child(1)>div{
+border: 0px solid black;;
+display: flex;
+align-items: center;
+}
+
+
+#Slast>div:nth-child(2){
+width: 15%;
+height: 100%;
+border:0px solid red;
+display: flex;
+font-size: 30px;
+justify-content: space-around;
+align-items: center;
+
+}
+#icon{
+border: 1px solid rgb(146, 147, 145);
+width: 25%;
+font-size: 30px;
+height: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 5px;
+margin-right:5px;
+border-radius: 50%;
+
+}
+#icon+div>h2:nth-child(1){
+color: rgb(146, 147, 145);
+}
+
+#last{
+width: 90%;
+margin: auto;
+height: 100px;
+border:0px solid blue;
+display: flex
+
+}
+#last>h2{
+color:rgb(146, 147, 145) ;
+}
+
+    /*************************  END OF FOOTER STYLE *************************/
