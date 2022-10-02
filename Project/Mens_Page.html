@@ -459,6 +459,9 @@ margin-top: 100px;
 
 }
 
+
+
+
 </style>
 <body>
   <!-- ********************** START OF NAVBAR ************************* -->
@@ -1146,7 +1149,9 @@ function displayTable(){
     let btn = document.createElement("button");
     btn.innerText = "ADD TO BASKET";
     btn.addEventListener("click",function(){
+
           ADDtoCart(el);
+
     })
 
     card.append(ProductImg,Price,Title,btn);
@@ -1158,6 +1163,7 @@ function displayTable(){
 
 
 function ADDtoCart(el){
+    
     
     CartArr.push(el);
     localStorage.setItem("MyCart", JSON.stringify(CartArr))
